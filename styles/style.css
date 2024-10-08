@@ -1,1 +1,53 @@
+/*
+* --------------------------------------------
+* Custom styles to override the default Bootstrap ones
+* --------------------------------------------
+*/
 
+/* New Color Palette:
+* Lightest (Text):         #E0ECFC      (text, contrast with dark)
+* Dark Green (Primary):    #78A547
+* Light brown (Secondary): #C6AF84     (canvas background)
+* Dark blue (Accent):  #3B4280
+*/
+
+.bg-info {
+    background-color: #78A547 !important;
+    /* Light green for secondary backgrounds */
+}
+.navbar-brand {
+    font-family: 'Bebas Neue', cursive;
+    /*change the font name for what you have*/
+    font-size: 2.25rem;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+    color: #3B4280;
+    /* Dark green for brand name & nav links for visibility */
+}
+
+.btn-info {
+    color: #E0ECFC;
+    /* Lightest shade for text on info button for contrast */
+    background-color: #E0ECFC;
+    /* Light green for button background */
+    border-color: #3B4280;
+    /* Dark green for button border */
+}
+
+.btn-primary {
+    color: #E0ECFC;
+    /* Lightest shade for text */
+    font-size: 150%;
+    background-color: #78A547;
+    /* Dark green for primary button background */
+    border-color: #3B4280;
+    /* Reddish-brown for border to use as accent */
+    border-width: thick;
+}
+
+body {
+    background-color: #E0ECFC;
+    /* Lightest shade for body background to follow the 60% rule */
+}
